@@ -169,6 +169,6 @@ function mousePressed(){
 }
 function keyPressed(){
   if(key=='s'){
-    saveFrames('####.png');
+    save(canvas, 'patron.png');
   }
 }
