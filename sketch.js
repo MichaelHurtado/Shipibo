@@ -167,3 +167,8 @@ function marco(posx, posy){
 function mousePressed(){
   start();
 }
+function keyPressed(){
+  if(key=='s'){
+    saveFrames('####.png');
+  }
+}
