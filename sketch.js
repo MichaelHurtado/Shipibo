@@ -21,8 +21,9 @@ let colo4=[
   '#BFFF00',
   '#FF299C'
 ];
+var canvas;
 function setup(){
-  var canvas = createCanvas(574,574);
+  canvas = createCanvas(574,574);
   canvas.parent('sketch-holder');
   noStroke();
   start();
@@ -169,6 +170,6 @@ function mousePressed(){
 }
 function keyPressed(){
   if(key=='s'){
-    save(canvas, 'patron.png');
+    saveCanvas(canvas, 'myCanvas', 'png');
   }
 }
